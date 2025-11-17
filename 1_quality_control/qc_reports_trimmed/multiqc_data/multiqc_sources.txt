@@ -1,0 +1,4 @@
+Module	Section	Sample Name	Source
+fastp	all_sections	SRR24442555	/Users/mm/Documents/project/metagenome/1_quality_control/qc_reports_trimmed/SRR24442555_fastp.json
+fastp	all_sections	SRR24442556	/Users/mm/Documents/project/metagenome/1_quality_control/qc_reports_trimmed/SRR24442556_fastp.json
+fastp	all_sections	SRR24442557	/Users/mm/Documents/project/metagenome/1_quality_control/qc_reports_trimmed/SRR24442557_fastp.json

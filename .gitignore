@@ -1,0 +1,17 @@
+# Ignore raw data and large outputs
+0_rawdata/
+1_quality_control/trimmed_reads/
+1_quality_control/qc_reports/
+2_taxonomy_functional/kraken2/
+2_taxonomy_functional/kraken2_db/
+3_MAG_gene_cluster/
+4_functional_annotation/eggnog_db/
+4_functional_annotation/prokka/
+4_functional_annotation/eggnog_annotations/
+5_visualization_and_interpretation/
+
+# Temporary and system files
+*.tmp
+*.log
+__pycache__/
+.DS_Store
