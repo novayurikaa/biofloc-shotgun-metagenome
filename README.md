@@ -29,7 +29,6 @@ This project investigates the microbial community structure and functional poten
 ### 2. (Functional potential)
 #### Which functional pathway relevant to water quality and host health are enriched in different biofloc samples?
 
-### 3. Can we recover draft genomes of key ecological players?
 ### 4. What are key biosynthetic gene clusters that may benefit aquaculture performance?
 
 ### Data source
