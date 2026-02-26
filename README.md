@@ -1,71 +1,84 @@
-# Biofloc metagenomics shotgun analysis project
 
+**Biofloc Metagenomics Shotgun Analysis Project**
 
-## Background Statement
-Biofloc technology enhances aquaculture sustainability by leveraging microbial
-food webs to convert nitrogenous waste into beneficial biomass while reducing
-water exchange. Understanding microbial taxa and their encoded functions is key
-to designing interventions (e.g., probiotics) that promote desirable traits.
+**A. Background Statement**
+Biofloc technology (BFT) enhances aquaculture sustainability by leveraging microbial food webs to convert nitrogenous waste into beneficial biomass while reducing water exchange. Understanding the successional shifts in microbial taxa and their encoded functions is key to designing interventions (e.g., probiotics) that promote system stability and pathogen resistance.
 
-This project investigates the microbial community structure and functional potential of biofloc aquaculture using shotgun metagenomic sequencing from shotgun metagenomic analysis of biofloc aquaculture microbiome (Rajeev et al., 2023).
+This project investigates the microbial community structure and functional potential of a biofloc aquaculture system using shotgun metagenomic sequencing data from Rajeev et al. (2023).
 
-### This project applies a full unix-based shotgun metagenomics workflow, including: 
+**B. Unix-Based Shotgun Metagenomics Workflow**
 
-1. Quality control and trimming (FastQC, fastp)
-2. Taxonomic profiling (Kraken2 + Bracken)
-3. Functional annotation (HUMAnN3)
-4. Genome assembly+draft MAG recovery, small scale (MEGAHIT, MetaBAT2, CheckM)
-   1 Sample for demonstration due to local compute limits
-6. Biosynthetic gene cluster (BGC) discovery (antiSMASH/DeepBCG)
+**1. Quality Control:** FastQC and fastp for read trimming and filtering.
 
-   NOTE: MAG and BCG run at reduced scale on local macOS. Full scale implementation could be expanded using HPC during future PhD work. 
+**2. Taxonomic Profiling:** Kraken2 + Bracken for species-level quantification across successional stages.
 
-### Research Questions
-### 1. (community composition)
- #### How do microbial community composition differ between multiple biofloc?
- #### which microbial taxa dominate the biofloc microbiome?
+**3. Genome Assembly: ** De novo assembly of metagenomic reads using MEGAHIT.
 
-  
-### 2. (Functional potential)
-#### Which functional pathway relevant to water quality and host health are enriched in different biofloc samples?
+**4. MAG Recovery:** Draft Metagenome-Assembled Genome (MAG) recovery using MetaBAT2.
 
-### 4. What are key biosynthetic gene clusters that may benefit aquaculture performance?
+**5. Functional Annotation ** (MAG-Centric):
 
-### Data source
+**6. EggNOG-mapper:** Evolutionary genealogy of genes: Non-supervised Orthologous Groups for COG/KEGG categorization.
 
+**7. Prokka: ** Rapid prokaryotic genome annotation.
 
-We use three real shotgun metagenomic samples from a biofloc aquaculture system
-Rajeev et al. 2023 — Metagenome sequencing and recovery of 444 MAGs from a biofloc aquaculture system. DOI: https://doi.org/10.1038/s41597-023-02622-0
+****8. Secondary Metabolism: ** Biosynthetic Gene Cluster (BGC) discovery using antiSMASH.
 
-### BioProject PRJNA967453:
+**Note:** Due to local computational limits, MAG recovery and BGC discovery were focused on a representative subsample of the Late-stage biofloc (SRR24442557). Full-scale implementation for all samples is planned for future High-Performance Computing (HPC) environments.
 
-| Sample | Accession | Description |
-|--------|-----------|-------------|
-| Biofloc S1 | SRR24442555 | Early stage microbiome |
-| Biofloc S2 | SRR24442556 | Mid development microbiome |
-| Biofloc S3 | SRR24442557 | Later stage / treatment microbiome |
+**C. Research Questions & Findings**
+**1. Microbial Succession and Composition**
 
+**Question: How does the microbial community evolve from setup to maturity?**
 
-### Progress Checklist
-Setup
-- [x] GitHub repository
-- [x] Project directory structure
+Finding: The system follows a clear ecological succession. Early stages are dominated by pioneer heterotrophs (Rhodobacter sp.), transitioning into a highly diverse climax community in the late stage (Sample 557).
 
-Analysis
-- [x] Download SRA metadata & raw reads
-- [x] QC + MultiQC report
-- [ ] Taxonomic profiles + plots
-- [ ] Functional profiles + pathway visualization
+Diversity: The late stage achieved a peak Shannon Diversity Index > 6.0 and richness of >3,000 species.
 
- MAG + BGC 
-- [ ] Single-sample assembly + binning
-- [ ] CheckM quality
-- [ ] antiSMASH / DeepBGC on recovered MAGs
-- [ ] Report BGC traits
+Dominant Taxa: Phaeobacter gallaeciensis was identified as the primary biological driver, consistently maintaining high abundance.
 
-Interpretation
-- [ ] Ecological insights summary in `docs/interpretation.md`
+**2. Functional Potential of the Climax Community**
 
-### Nova Yurika 
-Marine Science + Bioinformactics
-GitHub: https://github.com/novayurikaa
+**Question: What metabolic strategies allow dominant microbes to maintain the biofloc?
+**
+Finding: Functional profiling of the dominant MAG (Bin 1: ECFFIKGN) revealed a high density of TonB-dependent receptors. This indicates a specialized ecological niche focused on high-efficiency nutrient scavenging and iron acquisition from the water column.
+
+**3. Biosynthetic Gene Clusters (BGCs)**
+
+Question: Does the biofloc microbiome provide chemical defense for aquaculture species?
+
+Finding: Bin 1 acts as a "biosynthetic powerhouse," harboring over 80 BGCs. The dominance of NRPS-like (Non-Ribosomal Peptide Synthetase) clusters suggests a high capacity for producing antimicrobial compounds and siderophores, contributing to the system's biosecurity.
+
+**D. Downstream Analysis in R**
+The following analyses are available in the repository scripts, translating bioinformatics outputs into biological insights:
+
+Taxonomic & Diversity Analysis
+
+Alpha Diversity: Visualization of Richness and Shannon Index across stages.
+
+Beta Diversity: Hierarchical Clustering (UPGMA) and Heatmaps based on Bray-Curtis dissimilarity to identify significant community shifts.
+
+Dominant Taxa Profiling: Targeted heatmaps of the Top 20 Species tracking the bloom of beneficial taxa.
+
+Functional & MAG Analysis (Bin 1 Focus)
+
+Secondary Metabolite Profiling: Donut charts and bar plots of BGCs, highlighting NRPS-like cluster dominance.
+
+Core Functional Gene Analysis: Frequency bar plots of cleaned functional annotations identifying TonB-dependent receptors.
+
+Ecological Niche Mapping: Stacked bar plots identifying genes related to Nitrogen cycling, Phosphate remediation, and Oxidative stress defense.
+
+**E. Data Source**
+The project utilizes three shotgun metagenomic samples from BioProject PRJNA967453.
+
+Sample	Accession	Succession Stage
+Biofloc S1	SRR24442555	Early stage microbiome
+Biofloc S2	SRR24442556	Mid development microbiome
+Biofloc S3	SRR24442557	Late stage (Climax community)
+Reference: Rajeev et al. (2023) — Metagenome sequencing and recovery of 444 MAGs from a biofloc aquaculture system. DOI: 10.1038/s41597-023-02622-0
+
+**Author
+Nova Yurika
+Marine Science & Bioinformatics
+GitHub Profile**
+
