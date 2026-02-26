@@ -4,6 +4,9 @@
 **Exploring the microbial diversity and functional potential of biofloc aquaculture communities**
 
 **A. Background Statement**
+A Biofloc ecosystem is a sustainable wastewater treatment technology that has revolutionized aquaculture. At its core, it’s a self-contained "microbial soup" where waste is transformed into nutritious food for the fish or shrimp living within it.
+
+In a traditional pond, fish waste (ammonia) is toxic and must be flushed out with clean water. In a Biofloc system, we keep the waste but add a heavy dose of carbon (like molasses) and lots of oxygen. This encourages the growth of "good" bacteria that eat the ammonia and clump together into "flocs.
 
 Biofloc technology (BFT) enhances aquaculture sustainability by leveraging microbial food webs to convert nitrogenous waste into beneficial biomass while reducing water exchange. Understanding the successional shifts in microbial taxa and their encoded functions is key to designing interventions (e.g., probiotics) that promote system stability and pathogen resistance.
 
