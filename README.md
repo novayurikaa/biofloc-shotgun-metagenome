@@ -76,10 +76,14 @@ Ecological Niche Mapping: Stacked bar plots identifying genes related to Nitroge
 The project utilizes three shotgun metagenomic samples from BioProject PRJNA967453.
 
 Sample	Accession	Succession Stage
-Biofloc S1	SRR24442555	Early stage microbiome
-Biofloc S2	SRR24442556	Mid development microbiome
-Biofloc S3	SRR24442557	Late stage (Climax community)
-Reference: Rajeev et al. (2023) — Metagenome sequencing and recovery of 444 MAGs from a biofloc aquaculture system. DOI: 10.1038/s41597-023-02622-0
+Biofloc S1	SRR24442555	Early stage microbiome, 
+
+Biofloc S2	SRR24442556	Mid development microbiome, 
+
+Biofloc S3	SRR24442557	Late stage (Climax community), 
+
+Reference: Rajeev et al. (2023) :  Metagenome sequencing and recovery of 444 MAGs from a biofloc aquaculture system. DOI: 10.1038/s41597-023-02622-0
+
 
 **Author
 Nova Yurika
