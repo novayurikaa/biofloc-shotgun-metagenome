@@ -75,7 +75,8 @@ Ecological Niche Mapping: Stacked bar plots identifying genes related to Nitroge
 
 The project utilizes three shotgun metagenomic samples from BioProject PRJNA967453.
 
-Sample	Accession	Succession Stage
+Sample	Accession	Succession Stage:
+
 Biofloc S1	SRR24442555	Early stage microbiome, 
 
 Biofloc S2	SRR24442556	Mid development microbiome, 
