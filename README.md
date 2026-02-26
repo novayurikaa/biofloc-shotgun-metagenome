@@ -5,7 +5,7 @@
 
 Biofloc technology (BFT) enhances aquaculture sustainability by leveraging microbial food webs to convert nitrogenous waste into beneficial biomass while reducing water exchange. Understanding the successional shifts in microbial taxa and their encoded functions is key to designing interventions (e.g., probiotics) that promote system stability and pathogen resistance.
 
-This project investigates the microbial community structure and functional potential of a biofloc aquaculture system using shotgun metagenomic sequencing data from Rajeev et al. (2023).
+This project investigates the microbial community structure and functional potential of a biofloc aquaculture system using three samples representing early, mid, and late biofloc stage, without biological replication, using shotgun metagenomic sequencing data from Rajeev et al. (2023).
 
 **B. Unix-Based Shotgun Metagenomics Workflow**
 
