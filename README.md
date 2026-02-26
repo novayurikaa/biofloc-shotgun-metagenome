@@ -2,6 +2,7 @@
 **Biofloc Metagenomics Shotgun Analysis Project**
 
 **A. Background Statement**
+
 Biofloc technology (BFT) enhances aquaculture sustainability by leveraging microbial food webs to convert nitrogenous waste into beneficial biomass while reducing water exchange. Understanding the successional shifts in microbial taxa and their encoded functions is key to designing interventions (e.g., probiotics) that promote system stability and pathogen resistance.
 
 This project investigates the microbial community structure and functional potential of a biofloc aquaculture system using shotgun metagenomic sequencing data from Rajeev et al. (2023).
@@ -39,6 +40,7 @@ Dominant Taxa: Phaeobacter gallaeciensis was identified as the primary biologica
 
 **2. Functional Potential of the Climax Community**
 
+
 **Question: What metabolic strategies allow dominant microbes to maintain the biofloc?
 **
 Finding: Functional profiling of the dominant MAG (Bin 1: ECFFIKGN) revealed a high density of TonB-dependent receptors. This indicates a specialized ecological niche focused on high-efficiency nutrient scavenging and iron acquisition from the water column.
@@ -50,6 +52,7 @@ Question: Does the biofloc microbiome provide chemical defense for aquaculture s
 Finding: Bin 1 acts as a "biosynthetic powerhouse," harboring over 80 BGCs. The dominance of NRPS-like (Non-Ribosomal Peptide Synthetase) clusters suggests a high capacity for producing antimicrobial compounds and siderophores, contributing to the system's biosecurity.
 
 **D. Downstream Analysis in R**
+
 The following analyses are available in the repository scripts, translating bioinformatics outputs into biological insights:
 
 Taxonomic & Diversity Analysis
@@ -69,6 +72,7 @@ Core Functional Gene Analysis: Frequency bar plots of cleaned functional annotat
 Ecological Niche Mapping: Stacked bar plots identifying genes related to Nitrogen cycling, Phosphate remediation, and Oxidative stress defense.
 
 **E. Data Source**
+
 The project utilizes three shotgun metagenomic samples from BioProject PRJNA967453.
 
 Sample	Accession	Succession Stage
