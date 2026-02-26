@@ -9,9 +9,18 @@ A Biofloc ecosystem is a sustainable wastewater treatment technology that has re
 
 In a traditional pond, fish waste (ammonia) is toxic and must be flushed out with clean water. In a Biofloc system, we keep the waste but add a heavy dose of carbon (like molasses) and lots of oxygen. This encourages the growth of "good" bacteria that eat the ammonia and clump together into "flocs.
 
-Biofloc technology (BFT) enhances aquaculture sustainability by leveraging microbial food webs to convert nitrogenous waste into beneficial biomass while reducing water exchange. Understanding the successional shifts in microbial taxa and their encoded functions is key to designing interventions (e.g., probiotics) that promote system stability and pathogen resistance.
+Biofloc technology (BFT) enhances aquaculture sustainability by leveraging microbial food webs to convert nitrogenous waste into beneficial biomass while reducing water exchange. U**nderstanding the successional shifts in microbial taxa and their encoded functions is key to designing interventions (e.g., probiotics) that promote system stability and pathogen resistance.**
 
-This project investigates the microbial community structure and functional potential of a biofloc aquaculture system using three samples representing early, mid, and late biofloc stage, without biological replication, using shotgun metagenomic sequencing data from Rajeev et al. (2023).
+This project aimed to use shotgun metagenomic to explore t**he microbial community structure and functional genes present within the biofloc communities using three samples representing early, mid, and late biofloc stage.** The goal was to offer a more in-depth understanding of the potential of environmental microbes to produce  enzymes for heatlhy biofloc. Additionally, the study aims to promote the broader use of shotgun metagenomics in assessing aquaculture system. 
+
+The data was obtained from Rajeev et al. (2023).
+
+**Research Question**
+1.  Taxonomic profiling:
+   a. How does the microbial community evolve from early stage to maturity?
+   b. What is the dominant taxa?
+2.  Functional profiling:
+    a. What metabolic strategies allow dominant taxa to maintain the biofloc?
 
 **B. Unix-Based Shotgun Metagenomics Workflow**
 
@@ -36,26 +45,25 @@ This project investigates the microbial community structure and functional poten
 **C. Research Questions & Findings**
 **1. Microbial Succession and Composition**
 
-**Question: How does the microbial community evolve from setup to maturity?**
+**Question: How does the microbial community evolve from early to maturity?**
 
 Finding: The system follows a clear ecological succession. Early stages are dominated by pioneer heterotrophs (Rhodobacter sp.), transitioning into a highly diverse climax community in the late stage (Sample 557).
 
 Diversity: The late stage achieved a peak Shannon Diversity Index > 6.0 and richness of >3,000 species.
 
-Dominant Taxa: Phaeobacter gallaeciensis was identified as the primary biological driver, consistently maintaining high abundance.
+Dominant Taxa: _Phaeobacter gallaeciensis_ was identified as the primary biological driver, consistently maintaining high abundance.
 
 **2. Functional Potential of the Climax Community**
 
-
 **Question: What metabolic strategies allow dominant microbes to maintain the biofloc?
 **
-Finding: Functional profiling of the dominant MAG (Bin 1: ECFFIKGN) revealed a high density of TonB-dependent receptors. This indicates a specialized ecological niche focused on high-efficiency nutrient scavenging and iron acquisition from the water column.
+Finding: Functional profiling of the dominant MAG (Bin 1: ECFFIKGN) revealed a high density of **TonB-dependent receptors**. This indicates a specialized ecological niche focused on high-efficiency nutrient scavenging and iron acquisition from the water column.
 
 **3. Biosynthetic Gene Clusters (BGCs)**
 
-Question: Does the biofloc microbiome provide chemical defense for aquaculture species?
+Question: Does the biofloc microbiome provide chemical defense metabolite for aquaculture species?
 
-Finding: Bin 1 acts as a "biosynthetic powerhouse," harboring over 80 BGCs. The dominance of NRPS-like (Non-Ribosomal Peptide Synthetase) clusters suggests a high capacity for producing antimicrobial compounds and siderophores, contributing to the system's biosecurity.
+Finding: Bin 1 acts as a "biosynthetic powerhouse," harboring over 80 BGCs. The dominance of **NRPS-like (Non-Ribosomal Peptide** **Synthetase) clusters** suggests a high capacity for producing antimicrobial compounds and siderophores, contributing to the system's biosecurity.
 
 **D. Downstream Analysis in R**
 
