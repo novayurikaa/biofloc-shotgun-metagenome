@@ -11,7 +11,7 @@ In a traditional pond, fish waste (ammonia) is toxic and must be flushed out wit
 
 Biofloc technology (BFT) enhances aquaculture sustainability by leveraging microbial food webs to convert nitrogenous waste into beneficial biomass while reducing water exchange. U**nderstanding the successional shifts in microbial taxa and their encoded functions is key to designing interventions (e.g., probiotics) that promote system stability and pathogen resistance.**
 
-This project aimed to use shotgun metagenomic to explore t**he microbial community structure and functional genes present within the biofloc communities using three samples representing early, mid, and late biofloc stage.** The goal was to offer a more in-depth understanding of the potential of environmental microbes to produce  enzymes for heatlhy biofloc. Additionally, the study aims to promote the broader use of shotgun metagenomics in assessing aquaculture system. 
+This project aimed to use shotgun metagenomic to explore t**he microbial community structure and functional genes present within the biofloc communities using three samples representing early, mid, and late biofloc stage (without triplicate due to computational limit) .** The goal was to offer a more in-depth understanding of the potential of environmental microbes to produce  enzymes for heatlhy biofloc. Additionally, the study aims to promote the broader use of shotgun metagenomics in assessing aquaculture system. 
 
 The data was obtained from Rajeev et al. (2023).
 
