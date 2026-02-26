@@ -28,7 +28,7 @@ The data was obtained from Rajeev et al. (2023).
 
 **2. Taxonomic Profiling:** Kraken2 + Bracken for species-level quantification across successional stages.
 
-**3. Genome Assembly: ** De novo assembly of metagenomic reads using MEGAHIT.
+**3. Genome Assembly: **De novo assembly of metagenomic reads using MEGAHIT.
 
 **4. MAG Recovery:** Draft Metagenome-Assembled Genome (MAG) recovery using MetaBAT2.
 
