@@ -53,12 +53,13 @@ Functional Profiling
   
 5. Functional Annotation (Gene Cluster Analysis)
    - antiSMASH, to scanned "Bin 1" to find Biosynthetic Gene Clusters (BGCs)
-   
-6. Functional Annotation  (functional gene)
-
-- EggNOG-mapper: Evolutionary genealogy of genes: Non-supervised Orthologous Groups for COG/KEGG categorization.
-
-- Prokka:  Rapid prokaryotic genome annotation.
+     
+6.  Functional Annotation  (functional gene)
+   - Prokka for structural annotation
+   - eggNOG-mapper for functional orthology mapping,  took the protein sequences (.faa) from Prokka and compared them against the massive eggNOG database.Key data captured:
+COG Categories: General functional classes (e.g., "Energy production," "Defense mechanisms").
+KEGG Pathways: Specific metabolic maps (e.g., "Nitrogen metabolism," "Carbon fixation").
+GO Terms: Standardized vocabulary for what a gene does at a molecular or cellular level.
 
 
 **C. Research Questions & Findings**
