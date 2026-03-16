@@ -62,6 +62,25 @@ COG Categories: General functional classes (e.g., "Energy production," "Defense 
 KEGG Pathways: Specific metabolic maps (e.g., "Nitrogen metabolism," "Carbon fixation").
 GO Terms: Standardized vocabulary for what a gene does at a molecular or cellular level.
 
+**Downstream Analysis in R**
+
+The following analyses are available in the repository scripts, translating bioinformatics outputs into biological insights:
+
+A. Taxonomic & Diversity Analysis
+
+- Alpha Diversity: Visualization of Richness and Shannon Index across stages.
+
+- Beta Diversity: Hierarchical Clustering (UPGMA) and Heatmaps based on Bray-Curtis dissimilarity to identify significant community shifts.
+
+- Dominant Taxa Profiling: Targeted heatmaps of the Top 20 Species tracking the bloom of beneficial taxa.
+
+B. Functional & MAG Analysis (Bin 1 Focus)
+
+- Secondary Metabolite Profiling: Donut charts and bar plots of BGCs, highlighting NRPS-like cluster dominance.
+
+- Core Functional Gene Analysis: Frequency bar plots of cleaned functional annotations identifying TonB-dependent receptors.
+
+- Ecological Niche Mapping: Stacked bar plots identifying genes related to Nitrogen cycling, Phosphate remediation, and Oxidative stress defense.
 
 **C. Research Questions & Findings**
 1. Microbial Succession and Composition
@@ -85,27 +104,9 @@ Question: Does the biofloc microbiome provide chemical defense metabolite for aq
 
 Finding: Bin 1 acts as a "biosynthetic powerhouse," harboring over 80 BGCs. The dominance of NRPS-like (Non-Ribosomal Peptide Synthetase) clusters suggests a high capacity for producing antimicrobial compounds and siderophores, contributing to the system's biosecurity.
 
-**D. Downstream Analysis in R**
 
-The following analyses are available in the repository scripts, translating bioinformatics outputs into biological insights:
 
-A. Taxonomic & Diversity Analysis
-
-- Alpha Diversity: Visualization of Richness and Shannon Index across stages.
-
-- Beta Diversity: Hierarchical Clustering (UPGMA) and Heatmaps based on Bray-Curtis dissimilarity to identify significant community shifts.
-
-- Dominant Taxa Profiling: Targeted heatmaps of the Top 20 Species tracking the bloom of beneficial taxa.
-
-B. Functional & MAG Analysis (Bin 1 Focus)
-
-- Secondary Metabolite Profiling: Donut charts and bar plots of BGCs, highlighting NRPS-like cluster dominance.
-
-- Core Functional Gene Analysis: Frequency bar plots of cleaned functional annotations identifying TonB-dependent receptors.
-
-- Ecological Niche Mapping: Stacked bar plots identifying genes related to Nitrogen cycling, Phosphate remediation, and Oxidative stress defense.
-
-**E. Data Source**
+**D. Data Source**
 
 The project utilizes three shotgun metagenomic samples from BioProject PRJNA967453.
 
