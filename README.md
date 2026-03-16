@@ -30,26 +30,36 @@ Biofloc S3	SRR24442557	Late stage (Climax community).
 
 **B. Unix-Based Shotgun Metagenomics Workflow**
 
+Taxonomic profiling
+
 1. Quality Control:
    - FastQC, fastp, and Trimmomatic for read trimming and filtering.
 
 3. Taxonomic Profiling:
    - Kraken2 + Bracken for species-level quantification across successional stages.
 
-5. Genome Assembly:
-   - De novo assembly of metagenomic reads using MEGAHIT.
+Functional Profiling
+1. Subsampling:
+   - Due to local computational limits, MAG recovery and BGC discovery were focused on a representative subsample of the Late-stage biofloc (SRR24442557). Full-scale implementation for all samples is planned for future High-Performance Computing (HPC) environments.
 
-7. MAG Recovery: Draft Metagenome-Assembled Genome (MAG) recovery using MetaBAT2.
+2. De Novo Assembly
+   - Megahit, to Pieced together the short, overlapping reads into longer continuous sequences called contigs.
 
-8. Functional Annotation  (MAG-Centric):
+3. Read mapping and Depth Calculation
+   - BWA, Samtools, to aligned  original reads back to your new assembly.
+     
+4. Metagenomic Binning
+   - Metabat2, to grouped  contigs into Bins
+  
+5. Functional Annotation (Gene Cluster Analysis)
+   - antiSMASH, to scanned "Bin 1" to find Biosynthetic Gene Clusters (BGCs)
+   
+6. Functional Annotation  (functional gene)
 
 - EggNOG-mapper: Evolutionary genealogy of genes: Non-supervised Orthologous Groups for COG/KEGG categorization.
 
 - Prokka:  Rapid prokaryotic genome annotation.
 
-6. Secondary Metabolism: Biosynthetic Gene Cluster (BGC) discovery using antiSMASH.
-
-Note: Due to local computational limits, MAG recovery and BGC discovery were focused on a representative subsample of the Late-stage biofloc (SRR24442557). Full-scale implementation for all samples is planned for future High-Performance Computing (HPC) environments.
 
 **C. Research Questions & Findings**
 1. Microbial Succession and Composition
